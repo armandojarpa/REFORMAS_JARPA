@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reformas Jarpa | Especialistas en Reformas en Tenerife</title>
+    <!-- Cargamos Tailwind CSS para el diseño -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Cargamos iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Configuramos colores personalizados de la marca */
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandPrimary: '#0f172a', /* Azul muy oscuro */
+                        brandAccent: '#f97316',  /* Naranja de construcción */
+                    }
+                }
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="bg-gray-900 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold tracking-wider">
+                <span class="text-brandAccent">REFORMAS</span> JARPA
+            </div>
+            <!-- Menú para pantallas grandes -->
+            <div class="hidden md:flex space-x-6 font-semibold">
+                <a href="#inicio" class="hover:text-brandAccent transition">Inicio</a>
+                <a href="#servicios" class="hover:text-brandAccent transition">Servicios</a>
+                <a href="#nosotros" class="hover:text-brandAccent transition">Nosotros</a>
+                <a href="#galeria" class="hover:text-brandAccent transition">Galería</a>
+                <a href="#contacto" class="hover:text-brandAccent transition">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CABECERA PRINCIPAL (HERO) -->
+    <section id="inicio" class="relative text-white overflow-hidden bg-gray-900">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Fondo de construcción" class="w-full h-full object-cover">
+            <!-- Capa oscura para mejorar el contraste del texto -->
+            <div class="absolute inset-0 bg-black/60"></div>
+        </div>
+        <div class="relative container mx-auto px-6 py-32 flex flex-col items-center text-center">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
+                La Mejor Empresa de <br><span class="text-brandAccent">Reformas en Tenerife</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-2xl text-gray-200">
+                Materializamos tus ideas. Nos avalan años de experiencia en el sector, un cuidado meticuloso en los acabados y un compromiso inquebrantable con las fechas de entrega.
+            </p>
+            <a href="#contacto" class="bg-brandAccent hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transform hover:scale-105 transition duration-300">
+                Pide tu Presupuesto Sin Compromiso
+            </a>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE SERVICIOS -->
+    <section id="servicios" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-brandPrimary mb-4">Qué Hacemos</h2>
+                <div class="w-24 h-1 bg-brandAccent mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Servicio 1 -->
+                <div class="relative rounded-xl shadow-sm hover:shadow-md transition text-center overflow-hidden h-64 flex flex-col justify-center items-center p-8">
+                    <!-- Imagen de fondo -->
+                    <div class="absolute inset-0 bg-[url('trabajo_87.jpg')] bg-cover bg-center"></div>
+                    <!-- Capa oscura superpuesta (opacidad del 70%) -->
+                    <div class="absolute inset-0 bg-black/35"></div>
+                    <!-- Contenido -->
+                    <div class="relative z-10">
+                        <h3 class="text-2xl font-bold mb-4 text-white">Reformas Integrales</h3>
+                        <p class="text-gray-200">Transformamos viviendas completas, locales comerciales y oficinas con acabados de primera calidad.</p>
+                    </div>
+                </div>
+
+                <!-- Servicio 2 -->
+                <div class="relative rounded-xl shadow-sm hover:shadow-md transition text-center overflow-hidden h-64 flex flex-col justify-center items-center p-8">
+                    <!-- Imagen de fondo -->
+                    <div class="absolute inset-0 bg-[url('trabajo_89.jpg')] bg-cover bg-center"></div>
+                    <!-- Capa oscura superpuesta (opacidad del 70%) -->
+                    <div class="absolute inset-0 bg-black/35"></div>
+                    <!-- Contenido -->
+                    <div class="relative z-10">
+                        <h3 class="text-2xl font-bold mb-4 text-white">Baños y Cocinas</h3>
+                        <p class="text-gray-200">Modernizamos los espacios más importantes de tu hogar, desde la fontanería hasta los alicatados.</p>
+                    </div>
+                </div>
+
+                <!-- Servicio 3 -->
+                <div class="relative rounded-xl shadow-sm hover:shadow-md transition text-center overflow-hidden h-64 flex flex-col justify-center items-center p-8">
+                    <!-- Imagen de fondo -->
+                    <div class="absolute inset-0 bg-[url('trabajo_58.jpg')] bg-cover bg-center"></div>
+                    <!-- Capa oscura superpuesta (opacidad del 70%) -->
+                    <div class="absolute inset-0 bg-black/35"></div>
+                    <!-- Contenido -->
+                    <div class="relative z-10">
+                        <h3 class="text-2xl font-bold mb-4 text-white">Pintura y Albañilería</h3>
+                        <p class="text-gray-200">Especialistas en alisado de paredes, pintura decorativa y trabajos generales de albañilería.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN SOBRE NOSOTROS -->
+    <section id="nosotros" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="trabajo_2.jpg" alt="Herramientas de trabajo" class="w-full h-auto rounded-xl shadow-lg object-cover">                    
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-bold text-brandPrimary mb-4">Sobre Reformas Jarpa</h2>
+                    <div class="w-24 h-1 bg-brandAccent mb-6"></div>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Somos una empresa familiar afincada en Santa Cruz de Tenerife con años de experiencia en el sector de la construcción y las reformas. Nos enorgullece ofrecer un trato cercano, transparente y profesional a cada uno de nuestros clientes.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Nuestro compromiso es convertir tus ideas en realidad, cuidando hasta el último detalle y utilizando materiales de la más alta calidad para garantizar resultados duraderos e impecables.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE GALERÍA DE FOTOS (CARRUSEL) -->
+    <section id="galeria" class="py-20 bg-brandPrimary">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Nuestros Trabajos</h2>
+                <div class="w-24 h-1 bg-brandAccent mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600">Desliza para ver el resultado de nuestros proyectos en Tenerife.</p>
+            </div>
+
+            <!-- CONTENEDOR DEL CARRUSEL -->
+            <div class="relative w-full max-w-5xl mx-auto overflow-hidden rounded-2xl shadow-2xl bg-black">
+                
+                <!-- PISTA DEL CARRUSEL (donde van las fotos) -->
+                <div id="carouselTrack" class="flex transition-transform duration-500 ease-in-out">
+                    
+                    <!-- 👇👇👇 AQUÍ EMPIEZAN TUS FOTOS 👇👇👇 -->
+                    <!-- Para agregar tus fotos, cambia el enlace de src="" por el nombre de tu archivo (ej: src="bano.jpg") -->
+                    
+                    <!-- Diapositiva 1 -->
+                    <div class="min-w-full relative">
+                        <img src="obra_terminada_14.jpg" alt="Reforma de Baño" class="w-full h-[300px] md:h-[500px] object-cover">
+                        <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black to-transparent p-6 text-center">
+                            <h3 class="text-white font-bold text-2xl">Impermebilizando techo</h3>
+                        </div>
+                    </div>
+
+                    <!-- Diapositiva 2 -->
+                    <div class="min-w-full relative">
+                        <img src="obra_terminada_11.jpg" alt="Reforma de Cocina" class="w-full h-[300px] md:h-[500px] object-cover">
+                        <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black to-transparent p-6 text-center">
+                            <h3 class="text-white font-bold text-2xl">Impermebilizando techo</h3>
+                        </div>
+                    </div>
+
+                    <!-- Diapositiva 3 -->
+                    <div class="min-w-full relative">
+                        <img src="trabajo_33.jpg" alt="Alicatado" class="w-full h-[300px] md:h-[500px] object-cover">
+                        <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black to-transparent p-6 text-center">
+                            <h3 class="text-white font-bold text-2xl">Ducha de obra</h3>
+                        </div>
+                    </div>
+                    
+                    <!-- Diapositiva 4 -->
+                    <div class="min-w-full relative">
+                        <img src="obra_terminada_17.jpg" alt="Salón" class="w-full h-[300px] md:h-[500px] object-cover">
+                        <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black to-transparent p-6 text-center">
+                            <h3 class="text-white font-bold text-2xl">Ducha de obra</h3>
+                        </div>
+                    </div>
+
+
+                    <!-- Diapositiva 5 -->
+                    <div class="min-w-full relative">
+                        <img src="trabajo_23.jpg" alt="Salón" class="w-full h-[300px] md:h-[500px] object-cover">
+                        <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black to-transparent p-6 text-center">
+                            <h3 class="text-white font-bold text-2xl">Cambiando por tuberias de TERMOFUSION</h3>
+                        </div>
+                    </div>
+
+                                        <!-- Diapositiva 6 -->
+                    <div class="min-w-full relative">
+                        <img src="trabajo_29.jpg" alt="Salón" class="w-full h-[300px] md:h-[500px] object-cover">
+                        <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black to-transparent p-6 text-center">
+                            <h3 class="text-white font-bold text-2xl">Cambiando piso y Cajetines de luz</h3>
+                        </div>
+                    </div>
+
+                                        <!-- Diapositiva 7 -->
+                    <div class="min-w-full relative">
+                        <img src="trabajo_38.jpg" alt="Salón" class="w-full h-[300px] md:h-[500px] object-cover">
+                        <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black to-transparent p-6 text-center">
+                            <h3 class="text-white font-bold text-2xl">Aislamiento de humedad</h3>
+                        </div>
+                    </div>
+
+                    <!-- Diapositiva 8 -->
+                    <div class="min-w-full relative">
+                        <img src="trabajo_70.jpg" alt="Salón" class="w-full h-[300px] md:h-[500px] object-cover">
+                        <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black to-transparent p-6 text-center">
+                            <h3 class="text-white font-bold text-2xl">Aprovechando espacios de jardin</h3>
+                        </div>
+                    </div>
+
+
+                                        <!-- Diapositiva 7 -->
+                    <div class="min-w-full relative">
+                        <img src="trabajo_88.jpg" alt="Salón" class="w-full h-[300px] md:h-[500px] object-cover">
+                        <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black to-transparent p-6 text-center">
+                            <h3 class="text-white font-bold text-2xl">Trabajos en el SUR</h3>
+                        </div>
+                    </div>
+
+                    <!-- Diapositiva 8 -->
+                    <div class="min-w-full relative">
+                        <img src="trabajo_107.jpg" alt="Salón" class="w-full h-[300px] md:h-[500px] object-cover">
+                        <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black to-transparent p-6 text-center">
+                            <h3 class="text-white font-bold text-2xl">Modificando espacios</h3>
+                        </div>
+                    </div>
+
+                    <!-- Diapositiva 8 -->
+                    <div class="min-w-full relative">
+                        <img src="trabajo_47.jpg" alt="Salón" class="w-full h-[300px] md:h-[500px] object-cover">
+                        <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black to-transparent p-6 text-center">
+                            <h3 class="text-white font-bold text-2xl">Modificando espacios</h3>
+                        </div>
+                    </div>
+
+
+                    <!-- Puedes copiar y pegar el bloque de arriba para añadir Diapositiva 5, 6, etc. -->
+                    <!-- 👆👆👆 FIN DE TUS FOTOS 👆👆👆 -->
+
+                </div>
+
+                <!-- BOTONES DE NAVEGACIÓN -->
+                <button id="btnPrev" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 hover:bg-brandAccent text-white w-12 h-12 flex items-center justify-center rounded-full transition duration-300">
+                    <i class="fa-solid fa-chevron-left text-xl"></i>
+                </button>
+                <button id="btnNext" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 hover:bg-brandAccent text-white w-12 h-12 flex items-center justify-center rounded-full transition duration-300">
+                    <i class="fa-solid fa-chevron-right text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE CONTACTO Y FOOTER -->
+    <footer id="contacto" class="bg-gray-900 text-gray-300 py-16">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 border-b border-gray-700 pb-12 mb-8">
+            <!-- Info Contacto -->
+            <div>
+                <h2 class="text-3xl font-bold text-white mb-6">¿Hablamos sobre tu proyecto?</h2>
+                <p class="mb-8 text-gray-400">Ponte en contacto con nosotros para recibir asesoramiento y un presupuesto detallado sin coste.</p>
+                
+                <div class="space-y-4">
+                    <p class="flex items-center"><i class="fa-solid fa-phone text-brandAccent w-6"></i> +34 666 744 449</p>
+                    <p class="flex items-center"><i class="fa-solid fa-envelope text-brandAccent w-6"></i> armandojarpa@gmail.com</p>
+                    <p class="flex items-center"><i class="fa-solid fa-location-dot text-brandAccent w-6"></i> Santa Cruz de Tenerife, Canarias</p>
+                </div>
+            </div>
+            
+            <!-- Botón WhatsApp -->
+            <div class="flex flex-col justify-center items-center bg-gray-800 rounded-2xl p-10 text-center">
+                <i class="fa-brands fa-whatsapp text-6xl text-green-500 mb-4"></i>
+                <h3 class="text-2xl font-bold text-white mb-2">Respuesta Rápida</h3>
+                <p class="mb-6 text-gray-400">Escríbenos directamente a WhatsApp y te atenderemos enseguida.</p>
+                <!-- Recuerda cambiar el número en este enlace -->
+                <a href="https://wa.me/34666744449" target="_blank" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg transition">
+                    Enviar mensaje a WhatsApp
+                </a>
+            </div>
+        </div>
+        <div class="container mx-auto px-6 text-center text-gray-500 text-sm">
+            &copy; 2026 Reformas Jarpa. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <!-- SCRIPT DEL CARRUSEL -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const track = document.getElementById('carouselTrack');
+            const btnPrev = document.getElementById('btnPrev');
+            const btnNext = document.getElementById('btnNext');
+            const slides = track.children;
+            const totalSlides = slides.length;
+            let currentIndex = 0;
+
+            function updateCarousel() {
+                // Movemos la pista hacia la izquierda dependiendo del índice actual
+                track.style.transform = `translateX(-${currentIndex * 100}%)`;
+            }
+
+            btnNext.addEventListener('click', () => {
+                // Avanzamos al siguiente. Si estamos en el último, volvemos al primero.
+                currentIndex = (currentIndex + 1) % totalSlides;
+                updateCarousel();
+            });
+
+            btnPrev.addEventListener('click', () => {
+                // Retrocedemos. Si estamos en el primero, vamos al último.
+                currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+                updateCarousel();
+            });
+
+            // Opcional: Autoplay (cambia de foto cada 5 segundos)
+            setInterval(() => {
+                currentIndex = (currentIndex + 1) % totalSlides;
+                updateCarousel();
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
