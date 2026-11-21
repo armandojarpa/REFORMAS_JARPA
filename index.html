@@ -259,7 +259,10 @@
         </div>
     </section>
 
-    <!-- SECCIÓN DE CONTACTO Y FOOTER -->
+
+
+    
+<!-- SECCIÓN DE CONTACTO Y FOOTER -->
     <footer id="contacto" class="bg-gray-900 text-gray-300 py-16">
         <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 border-b border-gray-700 pb-12 mb-8">
             <!-- Info Contacto -->
@@ -268,28 +271,56 @@
                 <p class="mb-8 text-gray-400">Ponte en contacto con nosotros para recibir asesoramiento y un presupuesto detallado sin coste.</p>
                 
                 <div class="space-y-4">
-                    <p class="flex items-center"><i class="fa-solid fa-phone text-brandAccent w-6"></i> +34 666 744 449</p>
-                    <p class="flex items-center"><i class="fa-solid fa-envelope text-brandAccent w-6"></i> armandojarpa@gmail.com</p>
-                    <p class="flex items-center"><i class="fa-solid fa-location-dot text-brandAccent w-6"></i> Santa Cruz de Tenerife, Canarias</p>
+                    <p class="flex items-center">
+                        <i class="fa-solid fa-phone text-brandAccent w-6"></i> 
+                        <a href="tel:+34666744449" class="hover:text-brandAccent transition">+34 666 744 449</a>
+                    </p>
+                    <p class="flex items-center">
+                        <i class="fa-solid fa-envelope text-brandAccent w-6"></i> 
+                        <a href="mailto:armandojarpa@gmail.com" class="hover:text-brandAccent transition">armandojarpa@gmail.com</a>
+                    </p>
+                    <p class="flex items-center">
+                        <i class="fa-solid fa-location-dot text-brandAccent w-6"></i> 
+                        Santa Cruz de Tenerife, Canarias
+                    </p>
+                    <p class="flex items-center">
+                        <i class="fa-brands fa-facebook text-brandAccent w-6"></i> 
+                        <a href="https://www.facebook.com/reformasjarpa" target="_blank" rel="noopener noreferrer" class="hover:text-brandAccent transition underline-offset-4 hover:underline">
+                            Facebook: Reformas Jarpa
+                        </a>
+                    </p>
                 </div>
             </div>
             
-            <!-- Botón WhatsApp -->
+            <!-- Botones de Contacto Rápido (WhatsApp y Facebook) -->
             <div class="flex flex-col justify-center items-center bg-gray-800 rounded-2xl p-10 text-center">
                 <i class="fa-brands fa-whatsapp text-6xl text-green-500 mb-4"></i>
                 <h3 class="text-2xl font-bold text-white mb-2">Respuesta Rápida</h3>
-                <p class="mb-6 text-gray-400">Escríbenos directamente a WhatsApp y te atenderemos enseguida.</p>
-                <!-- Recuerda cambiar el número en este enlace -->
-                <a href="https://wa.me/34666744449" target="_blank" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg transition">
-                    Enviar mensaje a WhatsApp
-                </a>
+                <p class="mb-6 text-gray-400">Escríbenos directamente a WhatsApp o visita nuestros trabajos recientes en Facebook.</p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 w-full justify-center">
+                    <a href="https://wa.me/34666744449" target="_blank" rel="noopener noreferrer" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full text-lg shadow-lg transition inline-flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                    <a href="https://www.facebook.com/reformasjarpa" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full text-lg shadow-lg transition inline-flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-facebook text-xl"></i>
+                        <span>Facebook</span>
+                    </a>
+                </div>
             </div>
         </div>
+
         <div class="container mx-auto px-6 text-center text-gray-500 text-sm">
             &copy; 2026 Reformas Jarpa. Todos los derechos reservados.
         </div>
     </footer>
 
+
+
+
+
+    
     <!-- SCRIPT DEL CARRUSEL -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
